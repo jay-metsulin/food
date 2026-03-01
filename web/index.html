@@ -7,7 +7,7 @@
     // because extensions can run 'document_start' before ANY of our HTML tags execute.
     // So instead, we swallow the specific uncaught error globally.
     window.addEventListener('error', function (event) {
-      if (event.message && event.message.includes('mce-autosize-textarea') && event.message.includes('has already been defined')) {
+      if (event.message && event.message.includes('mce-autosize-textarea')) {
         event.preventDefault(); // Prevents the error from being printed to the console
         event.stopImmediatePropagation();
       }
