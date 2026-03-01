@@ -1,0 +1,48 @@
+node_modules/
+.expo/
+dist/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.AppleDouble
+*.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Android/IDE
+.idea/
+*.iml
+local.properties
+.gradle/
+build/
+captures/
+
+# iOS/IDE
+*.hmap
+*.xcworkspace
+!default.xcworkspace
+*.xcuserstate
+project.xcworkspace
+xcuserdata/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xccheckout
+profile
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+
+# We usually want to ignore podfiles
+Pods/

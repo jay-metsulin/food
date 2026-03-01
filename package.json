@@ -1,0 +1,58 @@
+{
+  "name": "delivery-app",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start --web",
+    "web": "expo start --web",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "build:web": "expo export --platform web",
+    "msw:init": "msw init public/ --save",
+    "typecheck": "tsc --noEmit",
+    "tailwind": "tailwindcss -i src/global.css -o src/tailwind-built.css",
+    "tailwind:watch": "tailwindcss -i src/global.css -o src/tailwind-built.css --watch"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.6.0",
+    "@react-navigation/bottom-tabs": "^6.5.20",
+    "@react-navigation/native": "^6.1.18",
+    "@react-navigation/stack": "^6.3.29",
+    "@stripe/stripe-js": "^4.1.0",
+    "bcryptjs": "^2.4.3",
+    "expo": "~51.0.0",
+    "msw": "^2.3.4",
+    "nativewind": "^2.0.11",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.52.1",
+    "react-native": "0.74.1",
+    "react-native-gesture-handler": "^2.16.2",
+    "react-native-maps": "^1.14.0",
+    "react-native-safe-area-context": "^4.10.5",
+    "react-native-screens": "^3.31.1",
+    "react-native-web": "~0.19.12",
+    "sqlocal": "^0.12.0",
+    "tailwindcss": "3.1.8",
+    "uuid": "^10.0.0",
+    "zod": "^3.23.8",
+    "zustand": "^4.5.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@expo/webpack-config": "^19.0.1",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/react": "~18.2.0",
+    "@types/react-native": "~0.73.0",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.3.3"
+  },
+  "overrides": {
+    "postcss": "8.4.14"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  }
+}
